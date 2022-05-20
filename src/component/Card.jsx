@@ -1,18 +1,18 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from "react";
 
-function Card(props){
-    return(
-    <div>
-            <h2>{props.name}</h2>
-            <img
-                src={props.imgURL}
-                alt="avatar_img" />
-       <div className="bottom">
-                <p>{props.Phone}</p>
-                <p>{props.Email}</p>
-            </div>
-        </div>
-    )
+function Card(props) {
+  return (
+    <div className="card">
+      <div className="top">
+        <h2 className="name">{props.name}</h2>
+        <img className="circle-img" src={props.imgURL} alt="avatar_img" />
+      </div>
+      <div className="bottom">
+        <p className="info">{props.Phone}</p>
+        <p className="info">{props.Email}</p>
+      </div>
+    </div>
+  );
 }
-export default Card ;
+
+export default Card;
